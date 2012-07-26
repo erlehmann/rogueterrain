@@ -1,0 +1,5 @@
+rogueterrain is a text mode map generator. For sample output, do “cat example.map” in a terminal with at least 80 rows and 25 columns.
+
+rogueterrain was written by Nils Dagsson Moskopp (erlehmann) and is licensed under the Affero General Public License, either Version 3 of the license, or any later version as published by the Free Software Foundation.
+
+The Perlin noise module it uses was written by Stou S., JD Marble. It is in the public domain. <http://www.siafoo.net/snippet/229>
