@@ -137,7 +137,7 @@ def terrain(h, w, temperature_map, elevation_map, humidity_map, river_map):
             if temperature < 0:
                 return Fore.WHITE + Back.WHITE + Style.DIM + '▲'  # icy mountain
             else:
-                return Fore.WHITE + Back.GREEN  # icy mountain
+                return Fore.WHITE + Back.GREEN + '▲'  # icy mountain
 
     return '�'
 
