@@ -50,14 +50,14 @@ def terrain(h, w, temperature_map, elevation_map, humidity_map, river_map):
                 if humidity == 12 or humidity == 14:
                     return Fore.WHITE + Back.WHITE + Style.DIM + '⚘'  # icy flower
                 else:
-                    return Fore.WHITE + Back.WHITE + Style.DIM + ','  # icy grass
+                    return Fore.WHITE + Back.WHITE + Style.DIM + ':'  # icy grass
             else:
                 if humidity == 12 or humidity == 14:
                     return choice([Fore.RED, Fore.YELLOW, Fore.CYAN, \
                         Fore.MAGENTA, Fore.WHITE]) + Back.GREEN + \
                         Style.DIM + '⚘'  # flower
                 else:
-                    return Fore.GREEN + Back.GREEN + Style.DIM + ','  # grass
+                    return Fore.GREEN + Back.GREEN + Style.DIM + ':'  # grass
         elif humidity < 32:
             if temperature < 0:
                 return Fore.BLACK + Back.WHITE + Style.DIM + '♤'  # icy spade tree
@@ -95,9 +95,9 @@ def terrain(h, w, temperature_map, elevation_map, humidity_map, river_map):
                     return Fore.BLACK + Back.YELLOW + Style.DIM + '.'  # hot desert
         elif humidity < 16:
             if temperature < 0:
-                return Fore.WHITE + Back.WHITE + Style.DIM + ','  # icy grass
+                return Fore.WHITE + Back.WHITE + Style.DIM + ':'  # icy grass
             else:
-                return Fore.CYAN + Back.GREEN + Style.DIM + ','  # grass
+                return Fore.CYAN + Back.GREEN + Style.DIM + ':'  # grass
         elif humidity < 32:
             if temperature < 0:
                 return Fore.BLACK + Back.WHITE + Style.DIM + \
